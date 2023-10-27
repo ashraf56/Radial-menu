@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+
+<style>
+ 
+.menu {
+  padding: 0;
+  list-style: none;
+  position: relative;
+  margin: 30px auto;
+  width: 744px;
+  height: 744px;
+  padding-top: 70%;
+}
+
+@media all and (max-width: 320px) {
+  .menu {
+    width: 230px;
+    height: 230px;
+    padding: 0;
+  }
+}
+@media all and (min-width: 700px) {
+  .menu {
+    width: 500px;
+    height: 500px;
+    padding: 0;
+  }
+}
+.menu li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  -webkit-clip-path: url(#sector);
+          clip-path: url(#sector);
+
+}
+.menu li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+ color:#242128;
+;
+  background-color: azure;
+  text-align: center;
+
+}
+.menu li a:hover {
+  background-color: #7F1DFE;
+  color: white;
+  
+  
+}
+
+
+
+.one {
+ 
+  transform: rotate(0deg);
+}
+
+
+.two {
+ 
+  transform: rotate(60deg);
+}
+
+.three {
+ 
+  transform: rotate(120deg);
+}
+
+.four {
+
+  transform: rotate(180deg);
+}
+
+.five {
+  transform: rotate(240deg);
+}
+
+.six {
+  transform: rotate(300deg);
+}
+
+.icon {
+  position: absolute;
+  right: 15%;
+  top: 30%;
+    font-size: 35px;
+  line-height: 0;
+}
+
+
+
+.circle {
+            
+            position:absolute;
+            height:40%;
+            width:40%;
+            border-radius:50%;
+            background:white;
+            top:30%;
+            left:30%;
+            z-index:8;
+            border: 2px solid;
+            border-color: aliceblue;
+        }
+
+        .exit{
+          position:absolute;
+            height:50px;
+            width:50px;
+            border-radius:50%;
+            top:5%;
+            right: 30%;
+            z-index:8;
+            transform: rotate(-310deg);
+            border: 2px solid;
+            border-color: aliceblue;
+        }
+        .circle:hover{
+          border-color: #7F1DFE;
+;
+        }
+.exit span{
+  transform: rotate(20deg);
+
+}
+</style>
+
+</head>
+<body>
+<div class="exit">
+  <span style="top:20%; left: 20%; position: relative; font-size: 30px; "><ion-icon name="add-outline"></ion-icon></span>
+</div>
+    <ul class="menu">
+        <div class="circle">
+
+          <span style="position: relative;
+          top:70%;left: 30%;"><ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>  
+        
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon></span>
+        </div>
+        <li class="one">
+          <a href="#">
+            <span class="icon" ><ion-icon name="logo-youtube"></ion-icon>
+              <br>
+              <span style="font-size: 12px;">Reels/Shorts</spanp>
+            </span>
+            </span>
+          </a>
+        </li>
+        <li class="two">
+          <a href="#">
+            <span class="icon" style="transform: rotate(300deg);"><ion-icon name="image-outline"></ion-icon>
+              <br>
+              <span style="font-size: 12px;">Carousel</spanp>
+            </span>
+            </span>
+          </a>
+        </li>
+        <li class="three" >
+          <a href="#">
+            <span class="icon" style="transform: rotate(240deg);  "><ion-icon name="camera-outline"></ion-icon> <br>
+              <span style="font-size: 12px;">Post</spanp>
+            </span>
+           
+          </a>
+        </li>
+        <li class="four">
+          <a href="#">
+            <span class="icon" style="transform: rotate(-180deg);"><ion-icon name="bar-chart-outline"></ion-icon>
+            <br>
+            <span style="font-size: 12px;">Poll</span>
+            </span>
+          </a>
+        </li>
+        <li class="five">
+          <a href="#">
+            <span class="icon" style="transform: rotate(120deg);"><ion-icon name="videocam-outline"></ion-icon>
+              <br>
+              <span style="font-size: 12px;">Video content</spanp>
+            </span>
+            </span>
+          </a>
+        </li>
+        <li class="six">
+          <a href="#" >
+            <span class="icon" style="transform: rotate(60deg);"><ion-icon name="sunny-outline"></ion-icon>
+              <br>
+              <span style="font-size: 12px;">Live/event</spanp>
+            </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+      
+      <svg height="0" width="0">
+        <defs>
+          <clipPath clipPathUnits="objectBoundingBox" id="sector">
+            <path fill="none" stroke="#111" stroke-width="1" class="sector" d="M0.5,0.5 l0.5,0 A0.5,0.5 0 0,0 0.75,.066987298 z"></path>
+          </clipPath>
+        </defs>
+      </svg>
+      
+</body>
+</html>
